@@ -1,6 +1,6 @@
 # 10-BIT-PDAC
 
-The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Converter using open-source EDA tools.Today with the rapid advances in electronic technology, most of the microelectronics systems are digital in nature. The power consumption for the digital systems is lower and also they are noise- immune. So, it is preferred to store and transmit data through digital systems. But in the real world most of the data is still analogous in nature. So, there is requirement of a system to convert digital signals to analog and vice-versa. A DAC (Digital to analog converter) is a circuit which is used to convert digital signals to analog signals with respect to an external reference voltage. An N-bit DAC takes an input of N-bits and converts the signal into an analog output in the form of voltage or current [5]. A DAC converts the digital signal into analog by reconstructing sampled data. The digital data may be produced from a microprocessor, Application Specific Integrated Circuit (ASIC), FPGA (field programmable gate array) [6] and is converted into analog form. The ususal approach is to use a resistor string to divide the voltages but that wouls take upto 1024 resistors for a 10-bit DAC. so ,here we have tried to reduce the number of resistors by implementing the dac in two stages of 5 bits each.
+The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Converter using open-source EDA tools.Today with the rapid advances in electronic technology, most of the microelectronics systems are digital in nature. The power consumption for the digital systems is lower and also they are noise- immune. So, it is preferred to store and transmit data through digital systems. But in the real world most of the data is still analogous in nature. So, there is requirement of a system to convert digital signals to analog and vice-versa. A DAC (Digital to analog converter) is a circuit which is used to convert digital signals to analog signals with respect to an external reference voltage. An N-bit DAC takes an input of N-bits and converts the signal into an analog output in the form of voltage or current . A DAC converts the digital signal into analog by reconstructing sampled data. The digital data may be produced from a microprocessor, Application Specific Integrated Circuit (ASIC), FPGA (field programmable gate array) and is converted into analog form. The ususal approach is to use a resistor string to divide the voltages but that wouls take upto 1024 resistors for a 10-bit DAC. so ,here we have tried to reduce the number of resistors by implementing the dac in two stages of 5 bits each.
 
 # Terminal Functions
 | Name |  Description | 
@@ -13,6 +13,7 @@ The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Co
 | VSSA | Analog ground |
 | VREFH | Reference voltage high for DAC|
 | VREFL| Reference voltage low for DAC|
+
 
 ## MSB 5-Bit output
 ![MSB-5-bit](https://github.com/ameya81/10-BIT-PDAC/blob/master/out1.JPG?raw=true)
