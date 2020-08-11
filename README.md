@@ -4,6 +4,13 @@ The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Co
 
 ## MSB 5-Bit output
 ![MSB-5-bit](https://github.com/ameya81/10-BIT-PDAC/blob/master/out1.JPG?raw=true)
+
+## LSB 5-Bit output
+![LSB-5-bit](https://github.com/ameya81/10-BIT-PDAC/blob/master/out2.JPG?raw=true)
+
+## Expected Final output (MSB-5-bit+LSB-5-bit)
+![Expected_final](https://github.com/ameya81/10-BIT-PDAC/blob/master/aout.JPG?raw=true)
+ 
 ## Tools Used
 
 Ngspice-ngspice is the open source spice simulator for electric and electronic circuits. Such a circuit may comprise of JFETs, bipolar and MOS transistors, passive elements like R, L, or C, diodes, transmission lines and other devices, all interconnected in a netlist.
