@@ -2,6 +2,8 @@
 
 The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Converter using open-source EDA tools.The ususal approach is to use a resistor string to divide the voltages but that wouls take upto 1024 resistors for a 10-bit DAC. so ,here we have tried to reduce the number of resistors by implementing the dac in two stages of 5 bits each.
 
+## MSB 5-Bit output
+
 ## Tools Used
 
 Ngspice-ngspice is the open source spice simulator for electric and electronic circuits. Such a circuit may comprise of JFETs, bipolar and MOS transistors, passive elements like R, L, or C, diodes, transmission lines and other devices, all interconnected in a netlist.
@@ -12,20 +14,30 @@ Esim - eSim (previously known as Oscad / FreeEDA) is a free/libre and open sourc
 
 ## Steps to install ```Esim``` on Linux
 
-i. After downloading eSim, extract it using: 
+	i.      After downloading eSim, extract it using: 
+  
+   		       $ unzip eSim-2.1.zip
 
-    $ unzip eSim-2.1.zip
+   	ii.     Now change directories in to the top-level eSim directory (where this INSTALL file can be found).
 
-ii.     Now change directories in to the top-level eSim directory (where this INSTALL file can be found).
-
-iii.    To install eSim and other dependencies, run the following command :
+   	iii.    To install eSim and other dependencies, run the following command :
 
    		       $ chmod +x install-eSim.sh
    		       $ ./install-eSim.sh --install
 
-iv.     To uninstall eSim and all of its components, run the following command :
+   	iv.     To uninstall eSim and all of its components, run the following command :
 
    		       $ ./install-eSim.sh --uninstall
+    
+## Steps to install ```Esim``` on Windows OS
+
+    i.      Download eSim for Windows OS from "https://esim.fossee.in/". Disable the antivirus (if any).
+
+    ii.     Now double click on eSim installer and then follow the instruction to install eSim.
+
+    iii.    To uninstall eSim and all of its components, run the uninstaller "uninst-eSim.exe" located at 
+            top-level eSim directory (where this INSTALL file can be found).    
+    
 
 # #Steps to install ```Ngspice``` on LINUX
 
