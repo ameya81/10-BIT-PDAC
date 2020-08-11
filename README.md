@@ -10,8 +10,14 @@ Magic VLSI-Magic stands for Manhattan Artwork Generator for Integrated Circuits.
 Esim - eSim (previously known as Oscad / FreeEDA) is a free/libre and open source EDA tool for circuit design, simulation, analysis and PCB design. It is an integrated tool built using free/libre and open source software such as KiCad, Ngspice and GHDL. eSim is released under GPL.
 
 # Steps to install Ngspice on LINUX
-Run update command to update package repositories and get latest package information sudo apt-get update -y
-Run the install command with -y flag to quickly install the packages and dependencies sudo apt-get install -y ngspice
+Run update command to update package repositories and get latest package information
+'''
+sudo apt-get update -y
+'''
+Run the install command with -y flag to quickly install the packages and dependencies 
+'''
+sudo apt-get install -y ngspice
+'''
 Check the system logs to confirm that there are no related errors.
 
 # Steps to install Ngspice on WINDOWS
