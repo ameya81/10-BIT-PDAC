@@ -1,6 +1,18 @@
 # 10-BIT-PDAC
 
-The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Converter using open-source EDA tools.The ususal approach is to use a resistor string to divide the voltages but that wouls take upto 1024 resistors for a 10-bit DAC. so ,here we have tried to reduce the number of resistors by implementing the dac in two stages of 5 bits each.
+The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Converter using open-source EDA tools.Today with the rapid advances in electronic technology, most of the microelectronics systems are digital in nature. The power consumption for the digital systems is lower and also they are noise- immune. So, it is preferred to store and transmit data through digital systems. But in the real world most of the data is still analogous in nature. So, there is requirement of a system to convert digital signals to analog and vice-versa. A DAC (Digital to analog converter) is a circuit which is used to convert digital signals to analog signals with respect to an external reference voltage. An N-bit DAC takes an input of N-bits and converts the signal into an analog output in the form of voltage or current [5]. A DAC converts the digital signal into analog by reconstructing sampled data. The digital data may be produced from a microprocessor, Application Specific Integrated Circuit (ASIC), FPGA (field programmable gate array) [6] and is converted into analog form. The ususal approach is to use a resistor string to divide the voltages but that wouls take upto 1024 resistors for a 10-bit DAC. so ,here we have tried to reduce the number of resistors by implementing the dac in two stages of 5 bits each.
+
+# Terminal Functions
+| Name |  Description | 
+| :---:  | :-: |
+| D[0:9]  | Digital inputs |
+| VDD   | Digital power supply(1.8) |
+| VSS |  Digital ground|
+| AOUT| DAC analog voltage output|
+| VDDA| Analog voltage supply (3.3) |
+| VSSA | Analog ground |
+| VREFH | Reference voltage high for DAC|
+| VREFL| Reference voltage low for DAC|
 
 ## MSB 5-Bit output
 ![MSB-5-bit](https://github.com/ameya81/10-BIT-PDAC/blob/master/out1.JPG?raw=true)
@@ -11,7 +23,7 @@ The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Co
 ## Expected Final output (MSB-5-bit+LSB-5-bit)
 ![Expected_final](https://github.com/ameya81/10-BIT-PDAC/blob/master/aout.JPG?raw=true)
  
-## Tools Used
+# Tools Used
 
 Ngspice-ngspice is the open source spice simulator for electric and electronic circuits. Such a circuit may comprise of JFETs, bipolar and MOS transistors, passive elements like R, L, or C, diodes, transmission lines and other devices, all interconnected in a netlist.
 
@@ -64,7 +76,7 @@ Click on [ngspice](http://ngspice.sourceforge.net/download.html) and go to ```Do
 
 > ```ngspice``` is now downloaded and ready to use
 
-# Steps to clone the IP onto UNIX based systems
+## Steps to clone the IP onto UNIX based systems
 Cloning a github repository creates a local copy of a remote repo and this allows us to make any changes to the files locally without affecting the main repository. To clone the IP onto your system copy paste the commands given below one after the other.
 
 ```
