@@ -3,7 +3,7 @@
 The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Converter using open-source EDA tools.The ususal approach is to use a resistor string to divide the voltages but that wouls take upto 1024 resistors for a 10-bit DAC. so ,here we have tried to reduce the number of resistors by implementing the dac in two stages of 5 bits each.
 
 ## MSB 5-Bit output
-
+https://github.com/ameya81/10-BIT-PDAC/blob/master/out1.JPG
 ## Tools Used
 
 Ngspice-ngspice is the open source spice simulator for electric and electronic circuits. Such a circuit may comprise of JFETs, bipolar and MOS transistors, passive elements like R, L, or C, diodes, transmission lines and other devices, all interconnected in a netlist.
