@@ -1,7 +1,8 @@
 # 10-BIT-PDAC
-The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Converter using open-source EDA tools.
 
-# Tools Used
+The aim of the project is to design a 10 Bit Potentiometric Digital to Analog Converter using open-source EDA tools.The ususal approach is to use a resistor string to divide the voltages but that wouls take upto 1024 resistors for a 10-bit DAC. so ,here we have tried to reduce the number of resistors by implementing the dac in two stages of 5 bits each.
+
+## Tools Used
 
 Ngspice-ngspice is the open source spice simulator for electric and electronic circuits. Such a circuit may comprise of JFETs, bipolar and MOS transistors, passive elements like R, L, or C, diodes, transmission lines and other devices, all interconnected in a netlist.
 
@@ -9,30 +10,25 @@ Magic VLSI-Magic stands for Manhattan Artwork Generator for Integrated Circuits.
 
 Esim - eSim (previously known as Oscad / FreeEDA) is a free/libre and open source EDA tool for circuit design, simulation, analysis and PCB design. It is an integrated tool built using free/libre and open source software such as KiCad, Ngspice and GHDL. eSim is released under GPL.
 
-# Steps to install ```Esim``` on Linux
-1. Go to Downloads section of esim.fossee.in and download eSim for Ubuntu.
+## Steps to install ```Esim``` on Linux
 
-2. Type Ctrl+Alt+t to open command terminal.
+i. After downloading eSim, extract it using: 
 
-3. Change the directory where zip files is downloaded using 
-```
-cd . command. cd path-to-zipfile
-```
+    $ unzip eSim-2.1.zip
 
-4. unzip the zip file using below command
-```
-. unzip zip-file-name
-```
+ii.     Now change directories in to the top-level eSim directory (where this INSTALL file can be found).
 
-5. Change to eSim folder using cd command
+iii.    To install eSim and other dependencies, run the following command :
 
-6. Type below command to install eSim. 
-```
-./install-linux.sh --install
-```
+   		       $ chmod +x install-eSim.sh
+   		       $ ./install-eSim.sh --install
 
-7. Above script will install eSim along with dependencies.
-# Steps to install ```Ngspice``` on LINUX
+iv.     To uninstall eSim and all of its components, run the following command :
+
+   		       $ ./install-eSim.sh --uninstall
+
+# #Steps to install ```Ngspice``` on LINUX
+
 Run update command to update package repositories and get latest package information :
 ``` 
 sudo apt-get update -y
@@ -49,7 +45,17 @@ Click on [ngspice](http://ngspice.sourceforge.net/download.html) and go to ```Do
 
 > ```ngspice``` is now downloaded and ready to use
 
-# Contact Information
+# Steps to clone the IP onto UNIX based systems
+Cloning a github repository creates a local copy of a remote repo and this allows us to make any changes to the files locally without affecting the main repository. To clone the IP onto your system copy paste the commands given below one after the other.
+
+```
+$  sudo apt install -y git
+$  git clone https://github.com/ameya81/10-BIT-PDAC.git
+$  cd 
+```
+
+## Contact Information
+
 - Ameya Deshpande ,BTech ,NIT Karnataka ,ameyadeshpande81@gmail.com
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
 - Philipp Gühring, Software Architect, LibreSilicon Assocation pg@futureware.at
