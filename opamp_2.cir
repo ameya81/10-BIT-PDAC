@@ -1,0 +1,23 @@
+* /home/ameya/esim/eSim-2.0/library/SubcircuitLibrary/opamp_2/opamp_2.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Wed Aug 12 01:10:01 2020
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+M2  /vdd Net-_M1-Pad1_ Net-_M1-Pad1_ /vdd eSim_MOS_P		
+M4  /vdd Net-_M1-Pad1_ /out /vdd eSim_MOS_P		
+M9  /vdd /bias Net-_M5-Pad1_ /vdd eSim_MOS_P		
+M11  /vdd /bias Net-_M10-Pad1_ /vdd eSim_MOS_P		
+M3  Net-_M10-Pad1_ /v1n Net-_M1-Pad2_ GND eSim_MOS_N		
+M10  Net-_M10-Pad1_ /v1n Net-_M10-Pad3_ GND eSim_MOS_N		
+M5  Net-_M5-Pad1_ /v2n Net-_M1-Pad2_ GND eSim_MOS_N		
+M7  Net-_M5-Pad1_ /v2n Net-_M10-Pad3_ GND eSim_MOS_N		
+M6  Net-_M1-Pad2_ Net-_M1-Pad2_ GND GND eSim_MOS_N		
+M8  Net-_M10-Pad3_ Net-_M10-Pad3_ GND GND eSim_MOS_N		
+M1  Net-_M1-Pad1_ Net-_M1-Pad2_ GND GND eSim_MOS_N		
+M12  /out Net-_M10-Pad3_ GND GND eSim_MOS_N		
+U1  /v2n /v1n /vdd /bias /v1n /v2n /out PORT		
+
+.end

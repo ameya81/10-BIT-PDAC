@@ -1,0 +1,17 @@
+* Subcircuit swi
+.subckt swi /d /vdd /vil /vih /out 
+* /home/ameya/esim/esim-2.0/library/subcircuitlibrary/swi/swi.cir
+.include PMOS-180nm.lib
+.include NMOS-180nm.lib
+m1 /d0 /d gnd gnd CMOSN W=0.18u L=0.18u M=1
+m2 /vdd /d /d0 /vdd CMOSP W=0.45u L=0.18u M=1
+m5 /out net-_m5-pad2_ /vil /vdd CMOSP W=0.45u L=0.18u M=1
+m3 /out /d0 /vil gnd CMOSN W=0.18u L=0.18u M=1
+m6 /vih net-_m5-pad2_ /out gnd CMOSN W=0.18u L=0.18u M=1
+m4 /vih /d0 /out /vdd CMOSP W=0.45u L=0.18u M=1
+m7 net-_m5-pad2_ /d0 gnd gnd CMOSN W=0.18u L=0.18u M=1
+m8 /vdd /d0 net-_m5-pad2_ /vdd CMOSP W=0.45u L=0.18u M=1
+c1  /out gnd 200f
+* Control Statements
+
+.ends swi

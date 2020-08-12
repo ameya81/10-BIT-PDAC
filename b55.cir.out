@@ -1,0 +1,164 @@
+*  home ameya esim-workspace b55 b55.cir
+
+.include swi.sub
+.include opamp_2.sub
+r2   vdd net-_r2-pad2_ 10
+r3  net-_r2-pad2_ net-_r3-pad2_ 10
+r4  net-_r3-pad2_ net-_r4-pad2_ 10
+vrefh1   vdd gnd 3.3
+v1  d0 gnd pulse(0 1.8 1u 50p 50p 1u 2u)
+r5  net-_r4-pad2_ net-_r5-pad2_ 10
+r6  net-_r5-pad2_ net-_r6-pad2_ 10
+r7  net-_r6-pad2_ net-_r7-pad2_ 10
+r8  net-_r7-pad2_ net-_r8-pad2_ 10
+x1 d5  vdd net-_r8-pad2_ net-_r7-pad2_ net-_x1-pad6_ swi
+x5 d5  vdd net-_r6-pad2_ net-_r5-pad2_ net-_x17-pad5_ swi
+x13 d5  vdd net-_r4-pad2_ net-_r3-pad2_ net-_x13-pad6_ swi
+x4 d5  vdd net-_r2-pad2_  vdd net-_x16-pad5_ swi
+r9  net-_r8-pad2_ net-_r10-pad1_ 10
+r10  net-_r10-pad1_ net-_r10-pad2_ 10
+r11  net-_r10-pad2_ net-_r11-pad2_ 10
+x6 d5  vdd net-_r10-pad2_ net-_r10-pad1_ net-_x18-pad5_ swi
+r12  net-_r11-pad2_ net-_r12-pad2_ 10
+r13  net-_r12-pad2_ net-_r13-pad2_ 10
+r14  net-_r13-pad2_ net-_r14-pad2_ 10
+r15  net-_r14-pad2_ net-_r15-pad2_ 10
+r16  net-_r15-pad2_ net-_r16-pad2_ 10
+r17  net-_r16-pad2_ net-_r17-pad2_ 10
+r18  net-_r17-pad2_ net-_r18-pad2_ 10
+x2 d5  vdd net-_r18-pad2_ net-_r17-pad2_ net-_x2-pad6_ swi
+x8 d5  vdd net-_r16-pad2_ net-_r15-pad2_ net-_x19-pad4_ swi
+x14 d5  vdd net-_r14-pad2_ net-_r13-pad2_ net-_x14-pad6_ swi
+x7 d5  vdd net-_r12-pad2_ net-_r11-pad2_ net-_x18-pad4_ swi
+r19  net-_r18-pad2_ net-_r19-pad2_ 10
+r20  net-_r19-pad2_ net-_r20-pad2_ 10
+r21  net-_r20-pad2_ net-_r21-pad2_ 10
+r22  net-_r21-pad2_ net-_r22-pad2_ 10
+r23  net-_r22-pad2_ net-_r23-pad2_ 10
+r24  net-_r23-pad2_ net-_r24-pad2_ 10
+r25  net-_r24-pad2_ net-_r25-pad2_ 10
+r26  net-_r25-pad2_ net-_r26-pad2_ 10
+r27  net-_r26-pad2_ net-_r27-pad2_ 10
+r28  net-_r27-pad2_ net-_r28-pad2_ 10
+x3 d5  vdd net-_r28-pad2_ net-_r27-pad2_ net-_x22-pad4_ swi
+x11 d5  vdd net-_r26-pad2_ net-_r25-pad2_ net-_x11-pad6_ swi
+x15 d5  vdd net-_r24-pad2_ net-_r23-pad2_ net-_x15-pad6_ swi
+x10 d5  vdd net-_r22-pad2_ net-_r21-pad2_ net-_x10-pad6_ swi
+r29  net-_r28-pad2_ net-_r29-pad2_ 10
+r30  net-_r29-pad2_ net-_r30-pad2_ 10
+r31  net-_r30-pad2_ net-_r31-pad2_ 10
+x12 d5  vdd net-_r30-pad2_ net-_r29-pad2_ net-_x12-pad6_ swi
+r32  net-_r31-pad2_ h1 10
+x16 d6  vdd net-_x13-pad6_ net-_x16-pad5_ net-_x16-pad6_ swi
+x17 d6  vdd net-_x1-pad6_ net-_x17-pad5_ net-_x17-pad6_ swi
+x18 d6  vdd net-_x18-pad4_ net-_x18-pad5_ net-_x18-pad6_ swi
+x19 d6  vdd net-_x19-pad4_ net-_x14-pad6_ net-_x19-pad6_ swi
+x20 d6  vdd net-_x20-pad4_ net-_x2-pad6_ net-_x20-pad6_ swi
+x21 d6  vdd net-_x15-pad6_ net-_x10-pad6_ net-_x21-pad6_ swi
+x22 d6  vdd net-_x22-pad4_ net-_x11-pad6_ net-_x22-pad6_ swi
+x24 d7  vdd net-_x17-pad6_ net-_x16-pad6_ net-_x24-pad6_ swi
+x25 d7  vdd net-_x19-pad6_ net-_x18-pad6_ net-_x25-pad6_ swi
+x26 d7  vdd net-_x21-pad6_ net-_x20-pad6_ net-_x26-pad6_ swi
+x27 d7  vdd net-_x23-pad6_ net-_x22-pad6_ net-_x27-pad6_ swi
+x28 d8  vdd net-_x25-pad6_ net-_x24-pad6_ net-_x28-pad6_ swi
+x29 d8  vdd net-_x27-pad6_ net-_x26-pad6_ net-_x29-pad6_ swi
+x30 d9  vdd net-_x29-pad6_ net-_x28-pad6_  out1 swi
+x23 d6  vdd net-_x23-pad4_ net-_x12-pad6_ net-_x23-pad6_ swi
+r33  h1 net-_r33-pad2_ 10
+r34  net-_r33-pad2_ net-_r34-pad2_ 10
+r35  net-_r34-pad2_ net-_r35-pad2_ 10
+r36  net-_r35-pad2_ net-_r36-pad2_ 10
+r37  net-_r36-pad2_ net-_r37-pad2_ 10
+r38  net-_r37-pad2_ net-_r38-pad2_ 10
+r39  net-_r38-pad2_ net-_r39-pad2_ 10
+r40  net-_r39-pad2_ net-_r40-pad2_ 10
+x31 d0  vdd net-_r40-pad2_ net-_r39-pad2_ net-_x31-pad6_ swi
+x35 d0  vdd net-_r38-pad2_ net-_r37-pad2_ net-_x35-pad6_ swi
+x43 d0  vdd net-_r36-pad2_ net-_r35-pad2_ net-_x43-pad6_ swi
+x34 d0  vdd net-_r34-pad2_ net-_r33-pad2_ net-_x34-pad6_ swi
+r41  net-_r40-pad2_ net-_r41-pad2_ 10
+r42  net-_r41-pad2_ net-_r42-pad2_ 10
+r43  net-_r42-pad2_ net-_r43-pad2_ 10
+x36 d0  vdd net-_r42-pad2_ net-_r41-pad2_ net-_x36-pad6_ swi
+r44  net-_r43-pad2_ net-_r44-pad2_ 10
+r45  net-_r44-pad2_ net-_r45-pad2_ 10
+r46  net-_r45-pad2_ net-_r46-pad2_ 10
+r47  net-_r46-pad2_ net-_r47-pad2_ 10
+r48  net-_r47-pad2_ net-_r48-pad2_ 10
+r49  net-_r48-pad2_ net-_r49-pad2_ 10
+r50  net-_r49-pad2_ net-_r50-pad2_ 10
+x32 d0  vdd net-_r50-pad2_ net-_r49-pad2_ net-_x32-pad6_ swi
+x38 d0  vdd net-_r48-pad2_ net-_r47-pad2_ net-_x38-pad6_ swi
+x44 d0  vdd net-_r46-pad2_ net-_r45-pad2_ net-_x44-pad6_ swi
+x37 d0  vdd net-_r44-pad2_ net-_r43-pad2_ net-_x37-pad6_ swi
+r51  net-_r50-pad2_ net-_r51-pad2_ 10
+r52  net-_r51-pad2_ net-_r52-pad2_ 10
+r53  net-_r52-pad2_ net-_r53-pad2_ 10
+x39 d0  vdd net-_r52-pad2_ net-_r51-pad2_ net-_x39-pad6_ swi
+r54  net-_r53-pad2_ net-_r54-pad2_ 10
+r55  net-_r54-pad2_ net-_r55-pad2_ 10
+r56  net-_r55-pad2_ net-_r56-pad2_ 10
+r57  net-_r56-pad2_ net-_r57-pad2_ 10
+r58  net-_r57-pad2_ net-_r58-pad2_ 10
+r59  net-_r58-pad2_ net-_r59-pad2_ 10
+r60  net-_r59-pad2_ net-_r60-pad2_ 10
+x33 d0  vdd net-_r60-pad2_ net-_r59-pad2_ net-_x33-pad6_ swi
+x41 d0  vdd net-_r58-pad2_ net-_r57-pad2_ net-_x41-pad6_ swi
+x45 d0  vdd net-_r56-pad2_ net-_r55-pad2_ net-_x45-pad6_ swi
+x40 d0  vdd net-_r54-pad2_ net-_r53-pad2_ net-_x40-pad6_ swi
+r61  net-_r60-pad2_ net-_r61-pad2_ 10
+r62  net-_r61-pad2_ net-_r62-pad2_ 10
+r63  net-_r62-pad2_ net-_r63-pad2_ 10
+x42 d0  vdd net-_r62-pad2_ net-_r61-pad2_ net-_x42-pad6_ swi
+r64  net-_r63-pad2_ gnd 10
+x46 d1  vdd net-_x43-pad6_ net-_x34-pad6_ net-_x46-pad6_ swi
+x47 d1  vdd net-_x31-pad6_ net-_x35-pad6_ net-_x47-pad6_ swi
+x48 d1  vdd net-_x37-pad6_ net-_x36-pad6_ net-_x48-pad6_ swi
+x49 d1  vdd net-_x38-pad6_ net-_x44-pad6_ net-_x49-pad6_ swi
+x50 d1  vdd net-_x39-pad6_ net-_x32-pad6_ net-_x50-pad6_ swi
+x51 d1  vdd net-_x45-pad6_ net-_x40-pad6_ net-_x51-pad6_ swi
+x52 d1  vdd net-_x33-pad6_ net-_x41-pad6_ net-_x52-pad6_ swi
+x54 d2  vdd net-_x47-pad6_ net-_x46-pad6_ net-_x54-pad6_ swi
+x55 d2  vdd net-_x49-pad6_ net-_x48-pad6_ net-_x55-pad6_ swi
+x56 d2  vdd net-_x51-pad6_ net-_x50-pad6_ net-_x56-pad6_ swi
+x57 d2  vdd net-_x53-pad6_ net-_x52-pad6_ net-_x57-pad6_ swi
+x58 d3  vdd net-_x55-pad6_ net-_x54-pad6_ net-_x58-pad6_ swi
+x59 d3  vdd net-_x57-pad6_ net-_x56-pad6_ net-_x59-pad6_ swi
+x60 d4  vdd net-_x59-pad6_ net-_x58-pad6_  out2 swi
+x53 d1  vdd net-_r63-pad2_ net-_x42-pad6_ net-_x53-pad6_ swi
+r1  h1 net-_r1-pad2_ 10
+x61 d5  vdd h1 net-_r31-pad2_ net-_x23-pad4_ swi
+v3  d1 gnd pulse(0 1.8 2u 50p 50p 2u 4u)
+v4  d2 gnd pulse(0 1.8 4u 50p 50p 4u 8u)
+v5  d3 gnd pulse(0 1.8 8u 50p 50p 8u 16u)
+v6  d4 gnd pulse(0 1.8 16u 50p 50p 16u 32u)
+v7  d5 gnd pulse(0 1.8 32u 50p 50p 32u 64u)
+v8  d6 gnd pulse(0 1.8 64u 50p 50p 64u 128u)
+v9  d7 gnd pulse(0 1.8 128u 50p 50p 128u 256u)
+v10  d8 gnd pulse(0 1.8 256u 50p 50p 256u 512u)
+v11  d9 gnd pulse(0 1.8 512u 50p 50p 512u 1024u)
+c2   out1 gnd 1p
+c1   out2 gnd 1p
+v2 net-_r1-pad2_ gnd  dc 0
+x9 d5  vdd net-_r20-pad2_ net-_r19-pad2_ net-_x20-pad4_ swi
+* u3   out1 gnd plot_v2
+* u1   out2 gnd plot_v2
+* u2   aout plot_v1
+c3   aout gnd 1p
+r65   out1 net-_r65-pad2_ 10k
+r66   out2 net-_r66-pad2_ 10k
+r67  net-_r65-pad2_  aout 10k
+x62 gnd gnd net-_r66-pad2_ net-_r65-pad2_ gnd  vdd  aout opamp_2
+r68  net-_r66-pad2_  aout 10k
+.tran 1e-06 1024e-06 0e-06
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v( out1,gnd)
+plot v( out2,gnd)
+plot v( aout)
+.endc
+.end

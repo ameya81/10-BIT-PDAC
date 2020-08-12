@@ -1,0 +1,26 @@
+* /home/ameya/esim/esim-2.0/library/subcircuitlibrary/opamp_2/opamp_2.cir
+
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+m2 /vdd net-_m1-pad1_ net-_m1-pad1_ /vdd CMOSP W=3.6u L=0.18u M=1
+m4 /vdd net-_m1-pad1_ /out /vdd CMOSP W=0.9u L=0.18u M=1
+m9 /vdd /bias net-_m5-pad1_ /vdd CMOSP W=1.8u L=0.18u M=1
+m11 /vdd /bias net-_m10-pad1_ /vdd CMOSP W=1.8u L=0.18u M=1
+m3 net-_m10-pad1_ /v1n net-_m1-pad2_ gnd CMOSN W=3.6u L=0.18u M=1
+m10 net-_m10-pad1_ /v1n net-_m10-pad3_ gnd CMOSN W=3.6u L=0.18u M=1
+m5 net-_m5-pad1_ /v2n net-_m1-pad2_ gnd CMOSN W=3.6u L=0.18u M=1
+m7 net-_m5-pad1_ /v2n net-_m10-pad3_ gnd CMOSN W=0.36u L=0.18u M=1
+m6 net-_m1-pad2_ net-_m1-pad2_ gnd gnd CMOSN W=0.36u L=0.18u M=1
+m8 net-_m10-pad3_ net-_m10-pad3_ gnd gnd CMOSN W=0.36u L=0.18u M=1
+m1 net-_m1-pad1_ net-_m1-pad2_ gnd gnd CMOSN W=0.36u L=0.18u M=1
+m12 /out net-_m10-pad3_ gnd gnd CMOSN W=0.36u L=0.18u M=1
+* u1  /v2n /v1n /vdd /bias /v1n /v2n /out port
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end
