@@ -29,7 +29,7 @@ out1 - Output of the first 5 MSB's
 ![Expected_final](https://github.com/ameya81/10-BIT-PDAC/blob/master/aout.JPG?raw=true)
 (This is the expected output obtained by adding out1 and out2 in ngspice)
 
-## Obtaines Final output(After using opamp to add the stage outputs)
+## Obtained Final output(After using opamp to add the stage outputs)
 ![Obtained_final](https://github.com/ameya81/10-BIT-PDAC/blob/master/op_out.JPG?raw=true)
 This output is has scaled voltage probably due to the opamp loading problems.The output should ideally go till 3.2V but is seen scaled to 1.5 V.Still could not figure out how to solve this problem.
 
