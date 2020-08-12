@@ -87,12 +87,14 @@ Click on [ngspice](http://ngspice.sourceforge.net/download.html) and go to ```Do
 > ```ngspice``` is now downloaded and ready to use
 
 ## Steps to clone the IP onto UNIX based systems
+
 Cloning a github repository creates a local copy of a remote repo and this allows us to make any changes to the files locally without affecting the main repository. To clone the IP onto your system copy paste the commands given below one after the other.
 
 ```
 $  sudo apt install -y git
 $  git clone https://github.com/ameya81/10-BIT-PDAC.git
-$  cd 
+$  cd 10-BIT-PDAC
+$  ngspice b55.cir.out
 ```
 
 ## Further Work
